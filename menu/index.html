@@ -17,20 +17,37 @@
     }
 
     header {
-      text-align: center;
       padding: 2rem 1rem;
+      display: flex;
+      justify-content: center;
     }
 
-    header h1 {
+    .branding {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .logo {
+      height: 90px;
+      width: auto;
+    }
+
+    .title-text {
+      text-align: left;
+    }
+
+    .title-text h1 {
       font-family: "Futura", sans-serif;
       font-size: 2.5rem;
       margin: 0;
     }
 
-    header p {
+    .title-text p {
       font-size: 1rem;
       letter-spacing: 2px;
       color: #666;
+      margin: 0.2rem 0 0 0;
     }
 
     .menu {
@@ -66,8 +83,13 @@
 </head>
 <body>
   <header>
-    <h1>CUPHEAD</h1>
-    <p>The Delicious Last Cup</p>
+    <div class="branding">
+      <img src="logo.png" alt="Cuphead Logo" class="logo" />
+      <div class="title-text">
+        <h1>CUPHEAD</h1>
+        <p>The Delicious Last Cup</p>
+      </div>
+    </div>
   </header>
 
   <div class="menu">
